@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkhaus Status</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="parkhaus" class="container mx-auto mt-5">
+        <h1 class="text-center text-4xl mb-5">Parkhaus Status</h1>
+        <div id="stockwerke" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- JavaScript generiert die Stockwerke -->
+        </div>
+        <div id="muenzenAnzeige" class="text-center mt-4 font-bold text-lg">
+    Münzen: <span id="muenzen">100</span>
+</div>
+        <div class="text-center mt-4">
+    <button id="neueEtageButton" onclick="neueEtageHinzufuegen()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Neue Etage hinzufügen (Kosten: <span id="etagenKosten">50</span> Münzen)
+    </button>
+</div>
+    </div>
+
+    <script src="parkhaus.js"></script>
+</body>
+</html>
